@@ -89,3 +89,10 @@ python3.11 manage.py  --api
 ```bash
 docker-compose up
 ```
+
+
+
+## Frontend
+
+**Dont forget the set cloudflare keys**
+![](https://raw.githubusercontent.com/melihi/ocr_miner/main/frontend.png)
