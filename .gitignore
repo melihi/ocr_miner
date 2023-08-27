@@ -228,3 +228,4 @@ data/uploads/*
 data/cache
 data/db
 !ocrminer.png
+!frontend.png
