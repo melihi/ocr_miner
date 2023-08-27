@@ -191,9 +191,6 @@ data/db
 # Web P
 *.webp
 
-# Portable Network Graphics
-*.png
-
 # Animated Portable Network Graphics
 *.apng
 
@@ -224,10 +221,9 @@ data/db
 # 3D Images
 *.3dm
 *.max
+*.png
 
 .TODO
+data/uploads/*
 
-!assets/*
-!templates/*
-!static/img/*.png
 !ocrminer.png
