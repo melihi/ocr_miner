@@ -1,0 +1,93 @@
+https://www.geeksforgeeks.org/python-check-url-string/
+
+url domain validation
+https://www.codingdeeply.com/python-check-if-url-is-valid/?expand_article=1
+
+
+https://developers.google.com/style/phone-numbers
+
+social securtiy number 
+https://stackoverflow.com/questions/48776006/regex-to-match-ssn-in-python
+
+tc kimlik no
+https://gist.github.com/canerbasaran/5935004
+
+turkish regex
+https://github.com/mgulener/turkiye-regex-kaliplari
+
+eu vat regex
+https://gist.github.com/marcinlerka/630cc05d11bb10c5f1904506ff92abcd
+https://debugpointer.com/regex/regex-for-eu-vat-number
+
+credit_card
+https://www.paypalobjects.com/en_GB/vhelp/paypalmanager_help/credit_card_numbers.htm
+- kredi karti tipini ekle
+
+file hash
+https://github.com/tiangolo/fastapi/discussions/4383
+
+HASH detection
+rapora ekle entropi 3 un ustunde genellikle verilerin falan filan
+https://cocomelonc.github.io/malware/2022/11/05/malware-analysis-6.html
+https://github.com/s0md3v/Bolt/blob/master/db/hashes.json
+phone number
+https://uibakery.io/regex-library/phone-number-python
+
+rapora ekle ulkelerin ortalama plaka uzunluklari arastirmasi
+    Amerika Birleşik Devletleri (ABD): ABD'de plaka formatları eyaletlere göre değişebilir, ancak genellikle 1-7 karakter uzunluğunda olabilir. Örneğin: "123ABC", "ABC123".
+
+    Almanya: Almanya'da plakalar genellikle 2 harf ve ardından 1 ila 4 rakamdan oluşur. Örneğin: "AB123", "XY9999".
+
+    Fransa: Fransa'da plakalar genellikle 2 rakam, ardından tire (-) veya boşluk, sonra 2 rakam, tekrar tire veya boşluk, ve son olarak 2 rakamdan oluşur. Örneğin: "12-34-56", "99 99 99".
+
+    Rusya: Rusya'da plakalar genellikle 1 harf, ardından 3 rakam ve son olarak 2 harfden oluşur. Örneğin: "A123BC", "1A234B".
+
+    Çin: Çin'de plakalar genellikle 1 harf, ardından 1 harf veya 1 rakam, ve son olarak 4 veya 5 harf veya rakamdan oluşur. Örneğin: "A123BC", "AB123CD".
+
+
+Redis
+https://levelup.gitconnected.com/caching-data-with-redis-and-sqlalchemy-in-python-a-step-by-step-guide-97f898f55ef
+
+
+https://www.slingacademy.com/article/fastapi-how-to-upload-and-validate-files/
+
+
+ATU12143178",
+"BE0121431789",
+"BG121431789",
+"BG1214317890",
+"CY12143178X",
+"CY12143178L",
+"CZ12143178",
+"CZ121431789",
+"CZ1214317890",
+"DE121431789",
+"IN12144312142",
+"DK12143178",
+"EE121431789",
+"EL121431789",
+"GR121431789",
+"ESX12143178",
+"ES12143178X",
+"ESX1214317X",
+"FI12143178",
+"FR12143178901",
+"FRX1214317890",
+"FR1X121431789",
+"FRXX121431789",
+"HU12143178",
+"IE1214317WA",
+"IE1214317FA",
+"IT12143178901",
+"LT121431789",
+"LT121431789012",
+"LU12143178",
+"LV12143178901",
+"MT12143178",
+"NL121431789B01",
+"NL121431789BO2",
+"PL1214317890",
+"PT121431789",
+"RO1214317890",
+"SE121431789012",
+"SK1214317890"
