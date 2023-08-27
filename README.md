@@ -60,9 +60,9 @@ Ocr Miner can detect followed types of data:
 - opencv-python-headless
 - jinja2
 # How to use
-``
 
-- create envs/.env file
+
+- Edit envs/.env file
 
   - [x] HOST="psql-service-name"
   - [x] REDIS_HOST="redis-service-name"
