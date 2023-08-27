@@ -229,4 +229,5 @@ data/db
 
 !assets/*
 !templates/*
-!static/img/*
+!static/img/*.png
+!ocrminer.png
