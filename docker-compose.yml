@@ -22,8 +22,8 @@ services:
     ports:
       - "5432:5432"
     restart: on-failure
-    #volumes:
-    #  - ./data/db:/var/lib/postgresql/data
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
 
   redis-cache:
     image: redis:alpine
@@ -33,5 +33,5 @@ services:
     ports:
       - '6379:6379'
     command: redis-server --requirepass eYVX7EwVmmxKPCDmwMtyKVge8oLd2t81
-    #volumes:
-    #  - ./data/cache:/data
+    volumes:
+      - ./data/cache:/data
