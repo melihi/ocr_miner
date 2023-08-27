@@ -225,5 +225,6 @@ data/db
 
 .TODO
 data/uploads/*
-
+data/cache
+data/db
 !ocrminer.png
