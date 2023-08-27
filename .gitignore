@@ -226,3 +226,7 @@ data/db
 *.max
 
 .TODO
+
+!assets/*
+!templates/*
+!static/img/*
