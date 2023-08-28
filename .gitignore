@@ -223,8 +223,9 @@ cython_debug/
 *.png
 
 .TODO
-data/uploads/*
+!data/uploads/
 data/cache
 data/db
+!data
 !ocrminer.png
 !frontend.png

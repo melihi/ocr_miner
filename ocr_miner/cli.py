@@ -3,8 +3,25 @@ import uvicorn
 from ocr_miner.logger import setup_logger
 import logging
 from multiprocessing import cpu_count
+import pathlib
+from ocr_miner.config import UPLOAD_FOLDER
 
 
+def create_required_folders():
+    """Create data/uploads folder for save image to this path.
+    This path is required.
+    """
+    p = pathlib.Path(f"./{UPLOAD_FOLDER}")
+    p.mkdir(parents=True, exist_ok=True)
+    if not p.exists():
+        raise FileNotFoundError(
+            f"Required folder : {UPLOAD_FOLDER} \n Not found ! Please manually create"
+        )
+
+
+# call function for check and create required folders
+create_required_folders()
+# initialize looger
 setup_logger(logger_name="Ocr miner logger", logfile="ocr_miner.log")
 
 
@@ -25,4 +42,4 @@ def manage(api: bool):
             host="0.0.0.0",
             port=8000,
             # reload=True,
-        )
+        )  # enable reload for development purposes

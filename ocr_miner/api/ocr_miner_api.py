@@ -29,7 +29,7 @@ APP = FastAPI()
 APP.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
 redis_client = Redis(host=REDIS_HOST, port=6379, db=0, password=REDIS_PASSWORD)
-REDIS_CACHE_TIME = 10
+REDIS_CACHE_TIME = 3600
 
 
 # fastapi reposuna bak base route
