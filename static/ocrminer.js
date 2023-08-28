@@ -18,7 +18,11 @@ function uploadImage() {
     const startTime = performance.now();
     const fileInput = document.getElementById('formFile');
     const file = fileInput.files[0];
-
+    // check file size max 5MB
+    if (file.size > 5242880) {
+        $("#notif").text("File is too big! Max 5MB");
+        return
+    }
     $("#notif").text('Waiting for server !');
 
     if (file) {

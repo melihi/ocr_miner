@@ -118,7 +118,7 @@ async def find_regex(ocr_data: str) -> dict:
             for match in regex_result:
                 if match != None or match != "":
                     found_data.append(match)
-
+        # TODO this feature not working with dates FIX
         found_data = list(set(found_data))
         if len(found_data) > 0:
             print(found_data)
