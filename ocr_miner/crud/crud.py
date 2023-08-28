@@ -8,6 +8,12 @@ from sqlalchemy.exc import OperationalError, DataError, IntegrityError
 
 
 def insert_db(ocr_data: ocr_miner_model, db: Session):
+    """Insert ocr data to database.
+
+    Args:
+        ocr_data (ocr_miner_model): file hash, ocr data etc.
+        db (Session): _description_
+    """
     try:
         db_item = ocr_miner_model(**ocr_data.dict())
         db.add(db_item)
@@ -29,6 +35,12 @@ def insert_db(ocr_data: ocr_miner_model, db: Session):
 
 
 def insert_user_log_db(log_data: ocr_miner_user_log_model, db: Session):
+    """Add connection log to database.
+
+    Args:
+        log_data (ocr_miner_user_log_model): ip,port,request headers
+        db (Session): _description_
+    """
     try:
         db_item = ocr_miner_user_log_model(**log_data.dict())
         db.add(db_item)
@@ -47,6 +59,15 @@ def insert_user_log_db(log_data: ocr_miner_user_log_model, db: Session):
 
 
 def get_cache_from_db(file_hash: str, db: Session):
+    """Search file  hash in database if exist return.
+
+    Args:
+        file_hash (str): file hash
+        db (Session:
+
+    Returns:
+        _type_: Json ocr data
+    """
     try:
         data = (
             db.query(ocr_miner_model)

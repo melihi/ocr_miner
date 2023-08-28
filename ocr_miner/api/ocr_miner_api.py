@@ -4,15 +4,11 @@ from fastapi.responses import JSONResponse, HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from sqlalchemy.orm import Session
-
 import magic
 import json
 import hashlib
 import logging
-
-
 from redis import Redis
-
 from ocr_miner.config import REDIS_HOST, UPLOAD_FOLDER, REDIS_PASSWORD
 from ocr_miner.api.cloudflare_turnstile import check_turnstile
 from ocr_miner.database.database import add_tables, get_db
