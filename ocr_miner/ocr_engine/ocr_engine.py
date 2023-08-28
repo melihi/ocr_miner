@@ -129,7 +129,7 @@ async def find_regex(ocr_data: str) -> dict:
                         for phone in found_data:
                             # if phone[-1:].isdigit():
 
-                            tmp.append({"value": phone, "TYPE": "PHONE"})
+                            tmp.append({"value": phone, "type": "PHONE"})
                     except IndexError as e:
                         logging.warn(e)
                     if tmp:
@@ -141,9 +141,9 @@ async def find_regex(ocr_data: str) -> dict:
                             verify_result = verify_identity(ID)
 
                             if verify_result != None:
-                                tmp.append({"value": ID, "TYPE": verify_result})
+                                tmp.append({"value": ID, "type": verify_result})
                             else:
-                                tmp.append({"value": ID, "TYPE": "UNKNOWN"})
+                                tmp.append({"value": ID, "type": "UNKNOWN"})
                     except IndexError as e:
                         logging.warn(e)
                     if tmp:
@@ -152,7 +152,7 @@ async def find_regex(ocr_data: str) -> dict:
                     tmp = []
 
                     for cc in found_data:
-                        tmp.append({"value": cc, "TYPE": "CREDIT_CARD"})
+                        tmp.append({"value": cc, "type": "CREDIT_CARD"})
                     if tmp:
                         result["CREDIT_CARD_NUMBERS"] = tmp
                 case 3:

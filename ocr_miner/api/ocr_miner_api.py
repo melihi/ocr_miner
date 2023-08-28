@@ -28,9 +28,7 @@ redis_client = Redis(host=REDIS_HOST, port=6379, db=0, password=REDIS_PASSWORD)
 REDIS_CACHE_TIME = 3600
 
 
-# fastapi reposuna bak base route
 @APP.post("/api/v1/upload/")
-# @cache(expire=3600)
 async def upload_file(
     request: Request,
     cftoken: str = Form(...),
@@ -76,8 +74,6 @@ async def upload_file(
             detail=f"File type of {magic_data} is not supported",
         )
 
-    # reset cursor
-    # file.file.seek(0)
     # generat emd5 hash of data
     md5hash = hashlib.md5(file_bytes).hexdigest()
     try:
@@ -111,7 +107,7 @@ async def upload_file(
         file_extension = (file.filename).split(".")
         # generate filename
         file_name = f"{md5hash}" + "." + f"{file_extension[len(file_extension)-1]}"
-        # file.file.seek(0)
+
         file_location = f"{UPLOAD_FOLDER}/{file_name}"
         with open(file_location, "wb") as f:
             f.write(file_bytes)

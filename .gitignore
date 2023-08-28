@@ -204,9 +204,6 @@ cython_debug/
 *.svg
 *.svgz
 
-# Portable Document Format
-*.pdf
-
 # X BitMap
 *.xbm
 
